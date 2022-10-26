@@ -1,0 +1,268 @@
+/*-----------------------------------*\
+  # WEBSITE DESIGN FURNITURE STORE
+\*-----------------------------------*/
+/**
+ * copyright 2022 CODEMAXI
+ */
+
+/*-----------------------------------*\
+  # RESPONSIVE MOBILE
+\*-----------------------------------*/
+@media screen and (max-width:820px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .title__slide span {
+        font-size: 1.8rem;
+    }
+
+    * {
+        cursor: none;
+    }
+
+    a {
+        cursor: none;
+    }
+
+    button {
+        cursor: none;
+    }
+
+    /*-----------------------------------*\
+    # NAV
+    \*-----------------------------------*/
+    nav {
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.034);
+    }
+
+    .navigation {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        z-index: 100;
+        padding: 20px;
+        top: 0;
+        background-color: #fefefe;
+        gap: 4rem;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: var(--transition);
+    }
+
+    .menu.menu--active {
+        transform: translateX(0);
+    }
+
+    .btn__close {
+        position: absolute;
+        color: #000;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+    }
+
+    .btn__close {
+        font-size: 32px;
+        transition: var(--transition);
+    }
+
+    .btn__close:hover {
+        color: var(--main-color);
+    }
+
+    .icon__links {
+        display: flex;
+        gap: 2rem;
+        font-size: 18px;
+    }
+
+    .hamburguer {
+        display: block;
+        background-color: transparent;
+    }
+
+    .hamburguer i {
+        font-size: 24px;
+        transition: var(--transition);
+    }
+
+    .hamburguer i:hover {
+        color: var(--main-color);
+    }
+
+    .icon__links {
+        display: none;
+    }
+
+    /*-----------------------------------*\
+    # HEADER -- SWIPER
+    \*-----------------------------------*/
+    .swiper {
+        width: 100%;
+        height: 85vh;
+    }
+
+    .swiper-slide {
+        display: flex;
+        top: 2rem;
+    }
+
+    .title__slide {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .title__slide p {
+        width: 90%;
+    }
+
+    .picture__slide-1 {
+        display: none;
+    }
+
+    .picture__slide-2 {
+        display: none;
+    }
+
+    .btn__slide {
+        background-color: transparent;
+        padding: 16px 30px;
+        border: 1px solid #797776;
+        color: #797776;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+    }
+
+    .swiper-slide:nth-child(1) {
+        background-image: url(../img/bg-slider--1.png);
+        background-position-x: -20%;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide:nth-child(2) {
+        background-color: #e9f0f3;
+        background-image: url(../img/particle-3.png);
+        background-repeat: no-repeat;
+    }
+
+    /*-----------------------------------*\
+    # BANNER
+    \*-----------------------------------*/
+    .section__banner {
+        display: none;
+    }
+
+    /*-----------------------------------*\
+    # BRANDS
+    \*-----------------------------------*/
+    .section__brands {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+
+    /*-----------------------------------*\
+    # PICTURE SOCIAL
+    \*-----------------------------------*/
+    .section__picture {
+        display: none;
+    }
+}
+
+/*-----------------------------------*\
+  # RESPONSIVE TABLET
+\*-----------------------------------*/
+@media screen and (min-width:820px) and (max-width:1200px) {
+    .icon__links {
+        display: none;
+    }
+    /*-----------------------------------*\
+    # HEADER -- SWIPER
+    \*-----------------------------------*/
+    .swiper {
+        width: 100%;
+        height: 66vh;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-slide:nth-child(2) {
+        background-color: #e9f0f3;
+    }
+
+    .title__slide {
+        width: 50%;
+        margin-left: 4rem;
+    }
+
+    .title__slide p {
+        width: 90%;
+    }
+
+    .picture__slide-1 {
+        width: 80%;
+        height: 100%;
+        background: url("../img/bg-slider--1.png") no-repeat;
+        background-size: cover;
+        margin-right: -18rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .picture__slide-2 {
+        margin-top: -18rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        background: url("../img/particle-3.png") no-repeat;
+    }
+
+    .picture__slide-2 img {
+        width: 40%;
+    }
+
+    .picture__slide-1 img {
+        width: 35%;
+    }
+
+    .picture__slide-1 .particle-1 {
+        width: 15%;
+    }
+
+    .picture__slide-1 .particle-2 {
+        width: 25%;
+    }
+}
